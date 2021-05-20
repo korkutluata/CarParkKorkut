@@ -1,0 +1,11 @@
+﻿* Seq platformu logları grafikselleştirmek görselleştirmek için kullanılır
+serilog.sink.seq nuget package indiriyoruz
+bilgisayarımıza seq kurmak için www.datalust.co/download  ile yükle
+structure event data özelliği
+logger konfigürasyonu 5.videoda
+manage nuget   Serilog.Enrichers.Environment  indir
+API settingse de  Logger ekleme için  6.video izle,  burada eklenen nuget package'lara Serilog.Sinks.MSSqlServer ekliyoruz
+
+çoklu dil desteği Key Value sistemi
+Home controllerda resources dosyaları için Resources klasörüne resourcesfile tanımlama diller için, 7. videonun 12.dakikası
+Resources folder'ı içine resource.resx item add yapınca, aynı isimli class.cs altına gidiyor
