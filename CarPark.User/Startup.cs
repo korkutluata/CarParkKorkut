@@ -56,16 +56,16 @@ namespace CarPark.User
                 opt.DefaultRequestCulture = new RequestCulture("tr-TR");
                 opt.SupportedCultures = supportedCultures;
                 opt.SupportedUICultures = supportedCultures;
-                //opt.RequestCultureProviders = new List<IRequestCultureProvider>
-                //{
-                //    new QueryStringRequestCultureProvider(),
-                //    new CookieRequestCultureProvider(),
-                //    new AcceptLanguageHeaderRequestCultureProvider()
-                //};
-                opt.RequestCultureProviders = new[] {new RouteDataRequestCultureProvider()
+                opt.RequestCultureProviders = new List<IRequestCultureProvider>
                 {
-                    Options = opt
-                } };
+                    new QueryStringRequestCultureProvider(),
+                    new CookieRequestCultureProvider(),
+                    new AcceptLanguageHeaderRequestCultureProvider()
+                };
+                //opt.RequestCultureProviders = new[] {new RouteDataRequestCultureProvider()
+                //{
+                //    Options = opt
+                //} };
             });
         }
 
