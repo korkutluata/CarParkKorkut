@@ -98,7 +98,8 @@ namespace CarPark.User
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{culture}/{controller=Home}/{action=Index}/{id?}");
+                    //pattern: "{culture}/{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");  // culture seçimi olmaksızın doğrudan çalışması için
             });
         }
     }
